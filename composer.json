@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Kangyasin\\Contact": "src/"
+            "Kangyasin\\Contact\\": "src/"
         }
     },
     "minimum-stability": "dev",
