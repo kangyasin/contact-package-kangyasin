@@ -4,7 +4,7 @@
 
 ### Kangyasin\Contact\ContactServiceProvider::class,
 
-## run with
+## install package
 
 ### composer require kangyasin/contact
 
