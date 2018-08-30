@@ -1,0 +1,19 @@
+{
+    "name": "kangyasin/contact",
+    "description": "This will send email and insert into database",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kang yasin",
+            "email": "tutorialblogmarine@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kangyasin\\Contact": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
