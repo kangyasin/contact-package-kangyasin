@@ -6,9 +6,11 @@ class ContactServiceProvider extends ServiceProvider{
 
     public function boot(){
 
-        // $this->publishes([
-        //     __DIR__.'/../app/Console/Commands/CreateDatabase.php' => resource_path('/Console/Commands/CreateDatabase.php')
-        // ], 'console');
+        $this->publishes([
+            __DIR__.'/Console/Commands/' => app_path('Console/Commands/'),
+            __DIR__.'/Console/Kernel.php' => app_path('Console/')
+
+        ], 'console');
 
         $this->publishes([
             __DIR__.'/database/migrations/' => database_path('migrations')
