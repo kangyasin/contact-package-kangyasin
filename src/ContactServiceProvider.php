@@ -8,9 +8,10 @@ class ContactServiceProvider extends ServiceProvider{
 
         $this->publishes([
             __DIR__.'/Console/Commands/' => app_path('Console/Commands/'),
-            __DIR__.'/Console/Kernel.php' => app_path('Console/')
+            __DIR__.'/Console/Kernel.php' => app_path('Console/'),
+            __DIR__.'/Http/Controllers/' => app_path('Http/Controllers/')
 
-        ], 'console');
+        ], 'config-kangyasin');
 
         $this->publishes([
             __DIR__.'/database/migrations/' => database_path('migrations')

@@ -19,4 +19,17 @@ class ContactController extends Controller
         return redirect(route('contact'));
     }
 
+    public function testClientMigrate($host, $databasename, $user){
+        // $this->createSchema('testdby');
+        // Artisan::call('make:database', ['dbname' => 'migration_name_db']);
+        // return 'oke';
+
+        $this->setConnectionDB($host, $databasename, '', $user);
+        Artisan::call('migrate', [
+          '--path'     => "database/migrations/client"
+          ]);
+        // Artisan::call("php artisan migrate --path=database/migrations/client");
+        return 'oke';
+    }
+
 }
