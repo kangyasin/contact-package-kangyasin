@@ -1,7 +1,7 @@
 <?php
 
-namespace Kangyasin\Contact\Console\Commands;
-use Illuminate\Support\Facades\DB;
+namespace App\Console\Commands;
+use DB;
 use PDO;
 use Illuminate\Console\Command;
 

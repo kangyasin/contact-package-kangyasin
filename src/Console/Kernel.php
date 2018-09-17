@@ -1,10 +1,10 @@
 <?php
 
-namespace Kangyasin\Contact\Console;
+namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use Kangyasin\Contact\Console\Commands\CreateDatabase as CreateDatabase;
+use App\Console\Commands\CreateDatabase as CreateDatabase;
 
 class Kernel extends ConsoleKernel
 {
