@@ -7,8 +7,8 @@ class ContactServiceProvider extends ServiceProvider{
     public function boot(){
 
         $this->publishes([
-            __DIR__.'/app/Console' => resource_path('/Console'),
-        ]);
+            __DIR__.'/../app/Console/' => resource_path('/Console')
+        ], 'console');
 
     }
 
