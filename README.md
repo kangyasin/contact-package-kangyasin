@@ -1,22 +1,23 @@
 # Feature
 
-# contact form.
-# create new database with command php artisan make:database db_name
-# migration folder for core and client.
-# controler for create db and client.
+1. contact form.
+2. create new database with command php artisan make:database db_name
+3. migration folder for core and client.
+4. controler for create db and client.
 
 ## use config/app.php
 
-### Kangyasin\Contact\ContactServiceProvider::class,
+```php
+Kangyasin\Contact\ContactServiceProvider::class,
+```
 
 ## install package
 
-### composer require kangyasin/contact
+```markdown
+composer require kangyasin/contact
+```
 
 ## publish vendor
 
-### php artisan vendor:publish
-
-## choose config-kangyasin for publish vendor files.
-
-## This will send email and insert into database
+1. php artisan vendor:publish
+2. choose config-kangyasin for publish vendor files.
